@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Center | IPREU Digital</title>
+    <title>Privacy Center | ASA Digital</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
                 Home
             </a>
             <nav style="display: flex; align-items: center; gap: 1rem;">
-                <span class="logo-text" style="margin-bottom: 0;">IPREU Digital</span>
+                <span class="logo-text" style="margin-bottom: 0;">ASA Digital</span>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
                     <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -52,57 +52,64 @@
     </header>
 
     <div class="container">
-        <header style="text-align: center; margin-bottom: 4rem;">
+        <header>
             <h1>Privacy Hub</h1>
-            <p>Your privacy is our priority. Explore policies for each IPREU application.</p>
+            <p>Each app has its own privacy policy, describing exactly what that app does and does not collect.</p>
         </header>
 
-        <div class="privacy-grid">
-            <a href="offerlens.html" class="privacy-card">
-                <h3>OfferLens</h3>
-                <p>Learn how we protect your offer discovery data.</p>
-                <span class="view-policy">View Policy →</span>
-            </a>
-            <a href="paywise.html" class="privacy-card">
-                <h3>PayWise</h3>
-                <p>Data-locality and security for your financial life.</p>
-                <span class="view-policy">View Policy →</span>
-            </a>
-            <a href="fincalc-pro.html" class="privacy-card">
-                <h3>FinCalc Pro</h3>
-                <p>Offline-first financial calculations and privacy.</p>
-                <span class="view-policy">View Policy →</span>
-            </a>
-            <a href="secure-password.html" class="privacy-card">
-                <h3>SecurePassword</h3>
-                <p>Zero-knowledge architecture and vault security.</p>
-                <span class="view-policy">View Policy →</span>
-            </a>
-            <a href="feminaflow.html" class="privacy-card">
-                <h3>FeminaFlow</h3>
-                <p>Privacy-first tracking for health and wellness.</p>
-                <span class="view-policy">View Policy →</span>
-            </a>
-            <a href="studysnap.html" class="privacy-card">
-                <h3>StudySnap</h3>
-                <p>AI processing and local OCR data protection.</p>
-                <span class="view-policy">View Policy →</span>
-            </a>
-        </div>
+        <a href="offerlens.html" class="privacy-card">
+            <h3>OfferLens</h3>
+            <p>Learn how we protect your offer discovery data.</p>
+            <span class="view-policy">View Policy &rarr;</span>
+        </a>
+
+        <a href="paywise.html" class="privacy-card">
+            <h3>PayWise</h3>
+            <p>Data-locality and security for your financial life.</p>
+            <span class="view-policy">View Policy &rarr;</span>
+        </a>
+
+        <a href="fincalc-pro.html" class="privacy-card">
+            <h3>FinCalc Pro</h3>
+            <p>Offline-first financial calculations and privacy.</p>
+            <span class="view-policy">View Policy &rarr;</span>
+        </a>
+
+        <a href="secure-password.html" class="privacy-card">
+            <h3>SecurePass</h3>
+            <p>Zero-knowledge architecture and vault security.</p>
+            <span class="view-policy">View Policy &rarr;</span>
+        </a>
+
+        <a href="feminaflow.html" class="privacy-card">
+            <h3>FeminaFlow</h3>
+            <p>Privacy-first tracking for health and wellness.</p>
+            <span class="view-policy">View Policy &rarr;</span>
+        </a>
+
+        <a href="studysnap.html" class="privacy-card">
+            <h3>StudySnap</h3>
+            <p>AI processing and local OCR data protection.</p>
+            <span class="view-policy">View Policy &rarr;</span>
+        </a>
+
+        <p style="margin-top: 3rem;">Questions about any of these policies, or about data you have shared with one of
+            these apps, can be sent to <a href="mailto:contact@asadigital.co.in">contact@asadigital.co.in</a>.</p>
 
         <footer style="margin-top: 6rem;">
-            <p>&copy; 2026 IPREU Digital. All rights reserved.</p>
+            <p>&copy; 2026 ASA Digital. All rights reserved.</p>
         </footer>
     </div>
+
     <script>
         // Custom Cursor Logic
         const dot = document.querySelector('.cursor-dot');
         const outline = document.querySelector('.cursor-outline');
-        
+
         window.addEventListener('mousemove', (e) => {
             const posX = e.clientX;
             const posY = e.clientY;
-            
+
             dot.style.transform = `translate(${posX}px, ${posY}px)`;
             outline.style.transform = `translate(${posX - 20}px, ${posY - 20}px)`;
         });
